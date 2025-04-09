@@ -70,10 +70,11 @@ section {
   max-width: 50%; /* Ensure the image is responsive */
   height: auto; /* Maintain aspect ratio */
 }
-
-#projects, #blog, #contact {
-  background-color: #f9f9f9; /* Light background for other sections */
-  padding: 20px; /* Add padding for spacing */
+  #project-list, #blog-list, #contact-list{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 }
 
 footer {
